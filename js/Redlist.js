@@ -5,7 +5,7 @@ $(document).ready(function(){
 function loadTopList(code){
 	$.ajax({
 		type:"get",
-		url:"/user/advert/redenvelope/top/list?inviteCode="+code,
+		url:originAPI+"/user/advert/redenvelope/top/list?inviteCode="+code,
 		async:true,
 		dataType:"json",
 		success:function(data){
